@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ec306f;
+  --secondary-color: #ffae6e;
+  --light-bg: #ffe3e3;
+  --accent-color: #8fdddf;
+
+  --text-color: #1f2937;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--white);
+  color: var(--text-color);
+}
