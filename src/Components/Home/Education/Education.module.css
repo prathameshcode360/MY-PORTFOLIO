@@ -1,0 +1,197 @@
+/* =========================
+   EDUCATION SECTION
+========================= */
+
+.education {
+  padding: 5rem 10%;
+  background-color: var(--light-bg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Header */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.sectionHeader p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+/* Cards Container */
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Education Card */
+.educationCard {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.educationCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.educationCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.educationCard:hover::before {
+  width: 6px;
+}
+
+/* Card Icon */
+.cardIcon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+/* Card Content */
+.cardContent {
+  flex: 1;
+}
+
+.degree {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  line-height: 1.4;
+}
+
+.period,
+.institution,
+.score {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+.period span,
+.institution span,
+.score span {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.institution {
+  font-weight: 500;
+}
+
+.score {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .education {
+    padding: 4rem 5%;
+  }
+
+  .cardsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .education {
+    padding: 3rem 5%;
+  }
+
+  .sectionHeader h2 {
+    font-size: 2rem;
+  }
+
+  .sectionHeader p {
+    font-size: 1rem;
+  }
+
+  .educationCard {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .educationCard::before {
+    width: 100%;
+    height: 4px;
+    top: 0;
+    left: 0;
+  }
+
+  .educationCard:hover::before {
+    height: 6px;
+  }
+
+  .degree {
+    font-size: 1.2rem;
+  }
+
+  .period,
+  .institution,
+  .score {
+    justify-content: center;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .education {
+    padding: 2rem 4%;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.8rem;
+  }
+
+  .degree {
+    font-size: 1.1rem;
+  }
+
+  .period,
+  .institution,
+  .score {
+    font-size: 0.85rem;
+  }
+}

@@ -6,6 +6,8 @@ import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Pages/Home/Homepage";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
+import LearningProjects from "./Pages/LearningProjects/LearningProjects";
+import Certificates from "./Pages/Certificates/Certificates";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +26,14 @@ function App() {
         {
           path: "contact",
           element: <Contact />,
+        },
+        {
+          path: "/learning-projects",
+          element: <LearningProjects />,
+        },
+        {
+          path: "/certificates",
+          element: <Certificates />,
         },
       ],
     },

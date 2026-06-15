@@ -1,0 +1,251 @@
+/* =========================
+   LEARNING PROJECTS SECTION
+========================= */
+
+.learningProjects {
+  padding: 5rem 10%;
+  background-color: var(--white);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.sectionHeader p {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+/* =========================
+   CATEGORY BUTTONS
+========================= */
+
+.categoryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.categoryBtn {
+  padding: 0.8rem 1.8rem;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.categoryBtn:hover {
+  background: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.categoryBtn.active {
+  background: var(--primary-color);
+  color: var(--white);
+  box-shadow: 0 4px 10px rgba(236, 48, 111, 0.3);
+}
+
+/* =========================
+   DESCRIPTION BOX
+========================= */
+
+.descriptionBox {
+  background: var(--light-bg);
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+  text-align: center;
+  border-left: 4px solid var(--primary-color);
+}
+
+.descriptionBox p {
+  color: var(--text-color);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* =========================
+   PROJECTS GRID
+========================= */
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.projectCard {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.projectImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.projectCard:hover .projectImage {
+  transform: scale(1.05);
+}
+
+.projectContent {
+  padding: 1.5rem;
+}
+
+.projectContent h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.techStack {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+.viewBtn {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--light-bg);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.viewBtn:hover {
+  background: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .learningProjects {
+    padding: 4rem 5%;
+  }
+
+  .sectionHeader h2 {
+    font-size: 2.2rem;
+  }
+
+  .projectsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .learningProjects {
+    padding: 3rem 5%;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.8rem;
+  }
+
+  .sectionHeader p {
+    font-size: 0.95rem;
+  }
+
+  .categoryContainer {
+    gap: 0.8rem;
+  }
+
+  .categoryBtn {
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+  }
+
+  .descriptionBox {
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .descriptionBox p {
+    font-size: 0.95rem;
+  }
+
+  .projectImage {
+    height: 180px;
+  }
+
+  .projectContent h4 {
+    font-size: 1.1rem;
+  }
+
+  .techStack {
+    font-size: 0.85rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .learningProjects {
+    padding: 2rem 4%;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.5rem;
+  }
+
+  .categoryBtn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .projectImage {
+    height: 160px;
+  }
+
+  .projectContent {
+    padding: 1.2rem;
+  }
+}

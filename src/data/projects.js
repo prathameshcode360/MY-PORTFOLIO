@@ -1,23 +1,5 @@
 import projectImg from "../assets/images/Demo_project.png";
 
-export const featuredProjects = [
-  {
-    id: 1,
-    title: "E-Commerce Platform",
-    image: projectImg,
-  },
-  {
-    id: 2,
-    title: "AI Resume Analyzer",
-    image: projectImg,
-  },
-  {
-    id: 3,
-    title: "MERN Blog Application",
-    image: projectImg,
-  },
-];
-
 export const learningProjects = {
   Frontend: {
     description:

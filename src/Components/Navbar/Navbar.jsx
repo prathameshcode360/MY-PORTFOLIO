@@ -18,7 +18,12 @@ function Navbar() {
             <li>
               <Link to="/">Home</Link>
             </li>
-
+            <li>
+              <Link to="/learning-projects">Projects</Link>
+            </li>
+            <li>
+              <Link to="/certificates">Certificates</Link>
+            </li>
             <li>
               <Link to="/about">About</Link>
             </li>

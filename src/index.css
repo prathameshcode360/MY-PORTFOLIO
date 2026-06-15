@@ -4,13 +4,23 @@
   box-sizing: border-box;
 }
 
-:root {
+/* :root {
   --primary-color: #ec306f;
   --secondary-color: #ffae6e;
   --light-bg: #ffe3e3;
   --accent-color: #8fdddf;
 
   --text-color: #1f2937;
+  --white: #ffffff;
+} */
+
+:root {
+  --primary-color: #6366f1; /* Indigo */
+  --secondary-color: #8b5cf6; /* Purple */
+  --light-bg: #f8fafc; /* Light Gray */
+  --accent-color: #06b6d4; /* Cyan */
+
+  --text-color: #1e293b; /* Dark Slate */
   --white: #ffffff;
 }
 

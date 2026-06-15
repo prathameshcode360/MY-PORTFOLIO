@@ -1,0 +1,185 @@
+.featuredProjects {
+  padding: 5rem 10%;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.sectionHeader p {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+/* Card */
+.featuredCard {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  padding: 2rem;
+  border-radius: 20px;
+  background: var(--white); /* Keep white background */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.featuredCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Left Section */
+.leftSection {
+  flex: 1;
+}
+
+.featuredBadge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 50px;
+  background: var(--primary-color); /* Using your primary color #ec306f */
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.featuredImage {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.featuredImage:hover {
+  transform: scale(1.02);
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.projectLinks a {
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  background: var(--text-color); /* Using #1f2937 */
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.projectLinks a:hover {
+  background: var(--primary-color); /* Changes to #ec306f on hover */
+  transform: translateY(-2px);
+}
+
+/* Right Section */
+.rightSection {
+  flex: 1;
+}
+
+.projectTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.projectTop h4 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+
+.rightSection h5 {
+  margin: 1.5rem 0 0.7rem;
+  font-size: 1rem;
+  color: var(--primary-color); /* Using primary color for subheadings */
+}
+
+.rightSection p {
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+/* Tech Chips */
+.techContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.techChip {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  background: var(--light-bg); /* Using #ffe3e3 */
+  color: var(--primary-color); /* Using #ec306f */
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* View More Button */
+.viewBtn {
+  margin-top: 2rem;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: var(--primary-color); /* Using #ec306f */
+  color: var(--white);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.viewBtn:hover {
+  background: var(--secondary-color); /* Using #ffae6e on hover */
+  transform: translateY(-2px);
+}
+
+/* Tablet Responsive */
+@media (max-width: 992px) {
+  .featuredCard {
+    flex-direction: column;
+  }
+
+  .projectTop {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .featuredProjects {
+    padding: 4rem 5%;
+  }
+
+  .projectLinks {
+    flex-wrap: wrap;
+  }
+
+  .projectLinks a {
+    flex: 1;
+    text-align: center;
+  }
+
+  .viewBtn {
+    width: 100%;
+  }
+
+  .projectTop h4 {
+    font-size: 1.5rem;
+  }
+}
