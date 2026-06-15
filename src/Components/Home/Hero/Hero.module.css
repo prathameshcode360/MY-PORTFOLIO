@@ -103,112 +103,6 @@
 }
 
 /* =========================
-   SKILLS SECTION
-========================= */
-
-.skills {
-  padding: 5rem;
-  background-color: var(--light-bg);
-}
-
-.skills h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-
-  font-size: 2.5rem;
-}
-
-.skillsContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-
-  gap: 1.5rem;
-}
-
-.skillCard {
-  background-color: var(--white);
-
-  padding: 2rem;
-
-  border-radius: 12px;
-
-  text-align: center;
-
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-}
-
-.skillCard h3 {
-  margin-bottom: 1rem;
-
-  color: var(--primary-color);
-}
-
-/* =========================
-   PROJECTS SECTION
-========================= */
-
-.projects {
-  padding: 5rem;
-}
-
-.projects > h2 {
-  text-align: center;
-
-  font-size: 2.5rem;
-
-  margin-bottom: 3rem;
-}
-
-.featuredProjects,
-.miniProjects {
-  margin-bottom: 4rem;
-}
-
-.featuredProjects h3,
-.miniProjects h3 {
-  margin-bottom: 2rem;
-
-  color: var(--primary-color);
-}
-
-.projectCard {
-  background-color: var(--white);
-
-  padding: 2rem;
-
-  margin-bottom: 1.5rem;
-
-  border-radius: 12px;
-
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-}
-
-.projectCard h4 {
-  margin-bottom: 1rem;
-}
-
-.projectCard p {
-  margin-bottom: 0.75rem;
-}
-
-.projectLinks {
-  display: flex;
-  gap: 1rem;
-}
-
-.projectLinks a {
-  text-decoration: none;
-
-  color: var(--primary-color);
-
-  font-weight: 600;
-}
-
-.projectLinks a:hover {
-  text-decoration: underline;
-}
-
-/* =========================
    TABLET
 ========================= */
 
@@ -238,11 +132,6 @@
   .heroImage img {
     width: 280px;
     height: 280px;
-  }
-
-  .skills,
-  .projects {
-    padding: 4rem 2rem;
   }
 }
 
@@ -278,19 +167,5 @@
   .heroImage img {
     width: 220px;
     height: 220px;
-  }
-
-  .skills,
-  .projects {
-    padding: 3rem 1rem;
-  }
-
-  .skills h2,
-  .projects > h2 {
-    font-size: 2rem;
-  }
-
-  .projectLinks {
-    flex-direction: column;
   }
 }
