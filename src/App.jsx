@@ -8,6 +8,7 @@ import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import LearningProjects from "./Pages/LearningProjects/LearningProjects";
 import Certificates from "./Pages/Certificates/Certificates";
+import ProjectDetails from "./Pages/ProjectDetails/ProjectDetails";
 
 function App() {
   const router = createBrowserRouter([
@@ -34,6 +35,10 @@ function App() {
         {
           path: "/certificates",
           element: <Certificates />,
+        },
+        {
+          path: "/project/:projectId",
+          element: <ProjectDetails />,
         },
       ],
     },

@@ -1,34 +1,92 @@
 import projectImg from "../assets/images/Demo_project.png";
-
+import todoImage from "../assets/Thumbnails/TODO.png";
 export const learningProjects = {
-  Frontend: {
+  "Core Frontend": {
     description:
-      "Projects focused on mastering frontend fundamentals including HTML, CSS, JavaScript, React, Context API, Redux and Firebase integration.",
+      "Projects built using HTML, CSS, and JavaScript focusing on DOM manipulation, responsive design, API integration, and browser-based application development.",
 
     projects: [
       {
+        id: "todo-app",
+        title: "TO-DO App",
+        description:
+          "A simple and responsive Task Management Application built using HTML, CSS, and JavaScript that allows users to add, edit, delete, and mark tasks as complete. The project demonstrates CRUD operations through DOM manipulation and uses Local Storage to persist tasks, ensuring data remains available even after the browser is refreshed.",
+
+        tech: ["HTML", "CSS", "JavaScript"],
+        image: todoImage,
+        githubLink: "https://github.com/prathameshcode360/TO-DO-APP.git",
+        liveDemo: " https://prathameshcode360.github.io/TO-DO-APP/",
+      },
+      {
+        id: "password-analyzer",
+        title: "Password Analyzer",
+        description:
+          "Password strength checker that evaluates password security based on length, character variety, and complexity rules with real-time feedback.",
+        tech: ["HTML", "CSS", "JavaScript"],
+        image: projectImg,
+      },
+      {
+        id: "portfolio-website",
         title: "Portfolio Website",
-        tech: "HTML • CSS • JavaScript",
+        description:
+          "Responsive personal portfolio showcasing projects, skills, and achievements with modern UI design and smooth user interactions.",
+        tech: ["HTML", "CSS", "JavaScript"],
         image: projectImg,
       },
       {
-        title: "Weather Application",
-        tech: "React • API Integration",
+        id: "crypto-tracker",
+        title: "Crypto Tracker",
+        description:
+          "Cryptocurrency tracking dashboard using external APIs to display live market prices, trends, and detailed coin information.",
+        tech: ["HTML", "CSS", "JavaScript", "API Integration"],
+        image: projectImg,
+      },
+    ],
+  },
+
+  React: {
+    description:
+      "Projects built using React ecosystem including Context API, Redux Toolkit, Firebase integration, and advanced state management.",
+
+    projects: [
+      {
+        id: "buy-busy",
+        title: "BuyBusy",
+        description:
+          "Full-featured e-commerce application with authentication, cart management, order processing, product browsing, and Redux-powered state management.",
+        tech: ["React", "Redux Toolkit", "Firebase"],
         image: projectImg,
       },
       {
+        id: "blog-app",
+        title: "Blog App",
+        description:
+          "Blog management platform with authentication, post creation, editing, and deletion using React and Firebase backend services.",
+        tech: ["React", "Firebase"],
+        image: projectImg,
+      },
+      {
+        id: "expense-tracker",
+        title: "Expense Tracker",
+        description:
+          "Personal finance tracking application with expense categorization, filtering, analytics, and Firebase-based data persistence.",
+        tech: ["React", "Firebase"],
+        image: projectImg,
+      },
+      {
+        id: "shopping-cart",
         title: "Shopping Cart",
-        tech: "React • Context API",
+        description:
+          "E-commerce shopping cart implementation with Context API for global state management and seamless user experience.",
+        tech: ["React", "Context API"],
         image: projectImg,
       },
       {
-        title: "Authentication App",
-        tech: "React • Firebase",
-        image: projectImg,
-      },
-      {
-        title: "Task Manager",
-        tech: "React • Redux",
+        id: "todo-note-maker",
+        title: "Todo & Note Maker",
+        description:
+          "Productivity application combining task management and note-taking features with Redux Toolkit state management.",
+        tech: ["React", "Redux Toolkit"],
         image: projectImg,
       },
     ],
@@ -36,45 +94,47 @@ export const learningProjects = {
 
   Backend: {
     description:
-      "Projects focused on Node.js, Express.js, MongoDB, authentication, REST APIs, middleware implementation and file handling.",
+      "Backend development projects focused on REST APIs, authentication, database management, real-time communication, and scalable server architecture.",
 
     projects: [
       {
-        title: "REST API",
-        tech: "Node.js • Express",
+        id: "job-portal",
+        title: "Job Portal API",
+        description:
+          "Backend system for job posting, application management, authentication, and role-based access control using Node.js and Express.",
+        tech: ["Node.js", "Express.js"],
         image: projectImg,
       },
       {
-        title: "Authentication System",
-        tech: "JWT • Bcrypt",
+        id: "ecommerce-api",
+        title: "E-Commerce Backend",
+        description:
+          "Complete backend for an e-commerce platform featuring authentication, products, orders, users, and RESTful APIs.",
+        tech: ["Node.js", "Express.js", "MongoDB", "REST API"],
         image: projectImg,
       },
       {
-        title: "File Upload System",
-        tech: "Multer",
-        image: projectImg,
-      },
-      {
-        title: "Blog API",
-        tech: "MongoDB • Express",
+        id: "chat-application",
+        title: "Chat Application",
+        description:
+          "Real-time chat platform supporting instant messaging, user authentication, and persistent conversations using socket programming.",
+        tech: ["Node.js", "Socket.io", "MongoDB", "Mongoose"],
         image: projectImg,
       },
     ],
   },
 
-  "Full-Stack": {
+  MERN: {
     description:
-      "Projects combining frontend and backend technologies to build complete production-ready applications.",
+      "Full-stack applications combining React, Node.js, Express.js, and MongoDB to build complete production-ready solutions.",
 
     projects: [
       {
-        title: "Blog Application",
-        tech: "MERN Stack",
-        image: projectImg,
-      },
-      {
+        id: "learning-management-system",
         title: "Learning Management System",
-        tech: "MERN Stack",
+        description:
+          "Comprehensive LMS platform featuring course management, student enrollment, progress tracking, assessments, and content delivery.",
+        tech: ["MongoDB", "Express.js", "React", "Node.js"],
         image: projectImg,
       },
     ],
@@ -82,19 +142,31 @@ export const learningProjects = {
 
   "Generative AI": {
     description:
-      "Projects exploring prompt engineering, AI APIs and practical AI-powered web applications.",
+      "Projects integrating Large Language Models, Retrieval-Augmented Generation (RAG), vector search, and AI-powered workflows.",
 
     projects: [
       {
-        title: "AI Chat Application",
-        tech: "OpenAI API",
-        image: projectImg,
-      },
-      {
-        title: "AI Resume Analyzer",
-        tech: "LLM Integration",
+        id: "personal-ai-doc-system",
+        title: "Personal AI DOC System",
+        description:
+          "AI-powered document assistant that enables users to upload documents, perform semantic search, and chat with their content using RAG architecture and Gemini AI.",
+        tech: [
+          "MERN",
+          "RAG",
+          "Gemini AI",
+          "LLM",
+          "Vector Search",
+          "MongoDB Atlas",
+        ],
         image: projectImg,
       },
     ],
+  },
+
+  "Machine Learning": {
+    description:
+      "Machine Learning projects involving data analysis, model training, prediction systems, and intelligent automation.",
+
+    projects: [],
   },
 };
