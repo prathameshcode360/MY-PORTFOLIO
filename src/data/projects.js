@@ -1,5 +1,6 @@
 import projectImg from "../assets/images/Demo_project.png";
 import todoImage from "../assets/Thumbnails/TODO.png";
+import passwordAnalyzerImage from "../assets/Thumbnails/Password_Strength_Analyzer.png";
 export const learningProjects = {
   "Core Frontend": {
     description:
@@ -21,9 +22,14 @@ export const learningProjects = {
         id: "password-analyzer",
         title: "Password Analyzer",
         description:
-          "Password strength checker that evaluates password security based on length, character variety, and complexity rules with real-time feedback.",
-        tech: ["HTML", "CSS", "JavaScript"],
-        image: projectImg,
+          "A simple Password Strength Analyzer Chrome Extension built using HTML, CSS, and JavaScript that allows users to analyze password strength in real time, generate secure passwords, estimate crack time, check passwords against known data breaches using the Have I Been Pwned API, and receive personalized security suggestions. The project demonstrates DOM manipulation, asynchronous API integration, the Web Crypto API for secure SHA-1 hashing, and a privacy-first approach where passwords are never stored or transmitted in full",
+
+        tech: ["HTML", "CSS", "JavaScript", " Web Crypto API"],
+        image: passwordAnalyzerImage,
+        githubLink:
+          "https://github.com/prathameshcode360/Password-Strength-Analyzer.git",
+        liveDemo:
+          "https://prathameshcode360.github.io/Password-Strength-Analyzer/",
       },
       {
         id: "portfolio-website",
