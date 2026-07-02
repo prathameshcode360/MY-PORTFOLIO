@@ -1,6 +1,15 @@
 import projectImg from "../assets/images/Demo_project.png";
-import todoImage from "../assets/Thumbnails/TODO.png";
-import passwordAnalyzerImage from "../assets/Thumbnails/Password_Strength_Analyzer.png";
+import todoImage from "../assets/Thumbnails/Core Frontend/TODO.png";
+import passwordAnalyzerImage from "../assets/Thumbnails/Core Frontend/Password_Strength_Analyzer.png";
+import portfolioImage from "../assets/Thumbnails/Core Frontend/portfolio.png";
+import cryptoTrackerImage from "../assets/Thumbnails/Core Frontend/CryptoTracker.png";
+import blogAppImage from "../assets/Thumbnails/React/BlogApp.png";
+import expenseTrackerImage from "../assets/Thumbnails/React/ExpenseTracker.png";
+import photoFolioImage from "../assets/Thumbnails/React/PhotoFolio.png";
+import shoppingCartImage from "../assets/Thumbnails/React/ShoppingCart.png";
+import nextCartImage from "../assets/Thumbnails/React/NextCart.png";
+import todoNoteImage from "../assets/Thumbnails/React/todoNote.png";
+
 export const learningProjects = {
   "Core Frontend": {
     description:
@@ -35,17 +44,22 @@ export const learningProjects = {
         id: "portfolio-website",
         title: "Portfolio Website",
         description:
-          "Responsive personal portfolio showcasing projects, skills, and achievements with modern UI design and smooth user interactions.",
+          "A simple and responsive Single Page Portfolio Website built using HTML, CSS, and JavaScript. This beginner-friendly project demonstrates the fundamental structure of a web application by implementing sections like Navigation, Hero, About, Services, Skills, Education, Contact, and Footer. It also showcases responsive design using Flexbox and CSS Grid, along with basic JavaScript features such as a mobile navigation menu, typing effect, smooth scrolling, and button click events",
         tech: ["HTML", "CSS", "JavaScript"],
-        image: projectImg,
+        image: portfolioImage,
+        githubLink: "https://github.com/prathameshcode360/Portfolio.git",
+        liveDemo: "https://prathameshcode360.github.io/Portfolio/",
       },
       {
         id: "crypto-tracker",
         title: "Crypto Tracker",
         description:
-          "Cryptocurrency tracking dashboard using external APIs to display live market prices, trends, and detailed coin information.",
+          "Crypto Tracker is a responsive web application built with HTML, CSS, and JavaScript that fetches real-time cryptocurrency market data from the CoinGecko API. Users can search, sort, and save their favorite cryptocurrencies using Local Storage, providing a simple and interactive way to track the crypto market.",
         tech: ["HTML", "CSS", "JavaScript", "API Integration"],
-        image: projectImg,
+        image: cryptoTrackerImage,
+        githubLink:
+          "https://github.com/prathameshcode360/Crypto-Tracker-App.git",
+        liveDemo: "https://prathameshcode360.github.io/Crypto-Tracker-App/",
       },
     ],
   },
@@ -56,45 +70,70 @@ export const learningProjects = {
 
     projects: [
       {
-        id: "buy-busy",
-        title: "BuyBusy",
+        id: "next-cart",
+        title: "NextCart",
         description:
-          "Full-featured e-commerce application with authentication, cart management, order processing, product browsing, and Redux-powered state management.",
+          "NextCart is a modern and responsive e-commerce web application built using React,Redux Toolkit, and Firebase. It enables users to browse products, search and filter items, manage their cart and wishlist, securely authenticate, and place orders. The application focuses on delivering a seamless shopping experience with efficient state management, real-time database integration, and a clean, user-friendly interface.",
         tech: ["React", "Redux Toolkit", "Firebase"],
-        image: projectImg,
+        image: nextCartImage,
+        githubLink: "https://github.com/prathameshcode360/NextCart.git",
+        liveDemo: "https://prathameshcode360.github.io/NextCart/",
       },
       {
         id: "blog-app",
         title: "Blog App",
         description:
-          "Blog management platform with authentication, post creation, editing, and deletion using React and Firebase backend services.",
-        tech: ["React", "Firebase"],
-        image: projectImg,
+          "A simple and responsive Blog Application built with React Hooks and Firebase Fire store.Users can add, edit, update, and delete blogs with real-time data handling.The app focuses on clean UI, proper state management, and modern React best practices.",
+        tech: ["React", "React-Hooks", "Firebase"],
+        image: blogAppImage,
+        githubLink: "https://github.com/prathameshcode360/BLOG-APP.git",
+        liveDemo: "https://prathameshcode360.github.io/BLOG-APP",
       },
       {
         id: "expense-tracker",
         title: "Expense Tracker",
         description:
-          "Personal finance tracking application with expense categorization, filtering, analytics, and Firebase-based data persistence.",
-        tech: ["React", "Firebase"],
-        image: projectImg,
+          "A modern Expense Tracker App built using React Hooks and Firebase Firestore.It allows users to add, update, and delete transactions with real-time balance tracking.The app is fully responsive and deployed using GitHub Pages.Perfect for learning React + Firebase integration",
+        tech: ["React", "React-Hooks", "Firebase"],
+        image: expenseTrackerImage,
+        githubLink:
+          "https://github.com/prathameshcode360/EXPENSE-TRACKER-APP.git",
+        liveDemo: "https://prathameshcode360.github.io/EXPENSE-TRACKER-APP",
       },
+
+      {
+        id: "photo-folio",
+        title: "Photo Folio",
+        description:
+          "PhotoFolio is a simple photo gallery app developed using React.It allows users to organize images into albums and edit them easily.Firebase Firestore is used for real-time data management.",
+        tech: ["React", "Firebase", "React Hooks"],
+        image: photoFolioImage,
+        githubLink: "https://github.com/prathameshcode360/PHOTO-FOLIO-APP.git",
+        liveDemo: "https://prathameshcode360.github.io/PHOTO-FOLIO-APP",
+      },
+
       {
         id: "shopping-cart",
         title: "Shopping Cart",
         description:
-          "E-commerce shopping cart implementation with Context API for global state management and seamless user experience.",
+          "A simple shopping cart application built using React and Context API.It allows users to add, remove, and manage cart items globally.The project focuses on clean state management without Redux.",
         tech: ["React", "Context API"],
-        image: projectImg,
+        image: shoppingCartImage,
+        githubLink: "https://github.com/prathameshcode360/SHOPPING-CART.git",
+        liveDemo: "https://prathameshcode360.github.io/SHOPPING-CART",
       },
-      {
-        id: "todo-note-maker",
-        title: "Todo & Note Maker",
-        description:
-          "Productivity application combining task management and note-taking features with Redux Toolkit state management.",
-        tech: ["React", "Redux Toolkit"],
-        image: projectImg,
-      },
+      // {
+      //   id: "todo-note-maker",
+      //   title: "Todo & Note Maker",
+      //   description:
+      //     "This project documents my step-by-step learning journey with Redux and Redux Toolkit in React. I started by understanding the fundamentals of core Redux, including actions, reducers, the store, and React-Redux integration, before migrating to Redux Toolkit to learn modern state management practices. Along the way, I explored selectors, middleware, extra reducers, asynchronous API calls using Fetch and Axios, and `createAsyncThunk`. Each commit in this repository represents a new concept I learned and implemented, making it both a practical learning resource and a reference for anyone getting started with Redux and Redux Toolkit.",
+      //   tech: ["React", "Redux Toolkit"],
+      //   image: todoNoteImage,
+      //   githubLink:
+      //     "https://github.com/prathameshcode360/Getting-Started-With-Redux.git",
+      //   liveDemo:
+      //     "https://prathameshcode360.github.io/Getting-Started-With-Redux",
+      // },
     ],
   },
 
